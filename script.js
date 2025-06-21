@@ -1,6 +1,6 @@
 'use strict';
 
-//Opening or closing side bar
+//Abrir o cerrar la barra lateral
 
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -9,7 +9,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 sidebarBtn.addEventListener("click", function() {elementToggleFunc(sidebar); })
 
-//Activating Modal-testimonial
+//Activación del testimonio modal
 
 const testimonialsItem = document.querySelectorAll('[data-testimonials-item]');
 const modalContainer = document.querySelector('[data-modal-container]');
@@ -36,12 +36,12 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     })
 }
 
-//Activating close button in modal-testimonial
+//Activar el botón de cerrar en el modal-testimonial
 
 modalCloseBtn.addEventListener('click', testimonialsModalFunc);
 overlay.addEventListener('click', testimonialsModalFunc);
 
-//Activating Filter Select and filtering options
+//Activación de la selección de filtros y opciones de filtrado
 
 const select = document.querySelector('[data-select]');
 const selectItems = document.querySelectorAll('[data-select-item]');
@@ -75,7 +75,7 @@ const filterFunc = function (selectedValue) {
     }
 }
 
-//Enabling filter button for larger screens 
+//Habilitar el botón de filtro para pantallas más grandes 
 
 let lastClickedBtn = filterBtn[0];
 
@@ -94,7 +94,7 @@ for (let i = 0; i < filterBtn.length; i++) {
     })
 }
 
-// Enabling Contact Form
+// Habilitación del formulario de contacto
 
 const form = document.querySelector('[data-form]');
 const formInputs = document.querySelectorAll('[data-form-input]');

@@ -92,9 +92,9 @@
                 <div class="separator"></div>
 
                 <ul class="social-list">
-                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.facebook.com/share/19HuNsg6NQ/?mibextid=wwXIfr" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
                     <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/hectorjc53?igsh=M2JyNG9idWxleGFn&utm_source=qr" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 </ul>
             </div>
         </aside>
@@ -680,36 +680,45 @@
                 </section>
             </article>
 
-            <article class="contacto " data-page="contacto">
-                <header>
-                    <h2 class="h2 article-title">Contacto</h2>
-                </header>
+            <article class="contacto" data-page="contacto">
+  <header>
+    <h2 class="h2 article-title">Contacto</h2>
+  </header>
 
-                <section class="mapbox" data-mapbox>
-                    <figure>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23469.735178771607!2d-72.23262360807982!3d11.369207297888028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1750532725585!5m2!1ses!2sco""
-                         width="400" height="300" loading="lazy"></iframe>
-                    </figure>
-                </section>
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23469.735178771607!2d-72.23262360807982!3d11.369207297888028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1750532725585!5m2!1ses!2sco"
+        width="400" height="300" loading="lazy" style="border:0;" allowfullscreen>
+      </iframe>
+    </figure>
+  </section>
 
-                <section class="contact-form">
-                    <h3 class="h3 form-title">Contact Form</h3>
+  <section class="contact-form">
+    <h3 class="h3 form-title">Formulario de Contacto</h3>
 
-                    <form action="#" class="form" data-form>
-                        <div class="input-wrapper">
-                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
-                        </div>
+    <form action="https://formsubmit.co/nunezhector153@gmail.com" method="POST" class="form">
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required>
+        <input type="email" name="email" class="form-input" placeholder="Correo electrónico" required>
+      </div>
 
-                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+      <textarea name="message" class="form-input" placeholder="Tu mensaje" required></textarea>
 
-                        <button class="form-btn" type="submit" disabled data-form-btn>
-                            <ion-icon name="paper-plane"></ion-icon>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-                </section>
-            </article>
+      <!-- Redireccionar a una página de gracias después del envío -->
+      <input type="hidden" name="_next" value="https://tusitio.github.io/gracias.html">
+
+      <!-- Evitar spam -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <button class="form-btn" type="submit">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Enviar Mensaje</span>
+      </button>
+    </form>
+  </section>
+</article>
+
         </div>
     </main>
 
