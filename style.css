@@ -1462,3 +1462,27 @@ textarea.form-input {
 
     .timeline-text { max-width: 700px; }
 }
+
+.direct-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background: var(--bg-gradient-jet);
+    color: var(--orange-yellow-crayola);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: var(--shadow2);
+    transition: var(--transition1);
+}
+
+    .direct-btn:hover, .direct-btn:focus { background: var(--bg-gradient-yellow1); }
+
+        .direct-btn:hover::before, .direct-btn:focus::before { background: var(--bg-gradient-yellow2); }
+
+::scroll-marker-group {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
