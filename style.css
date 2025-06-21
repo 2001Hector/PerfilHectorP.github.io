@@ -1463,26 +1463,32 @@ textarea.form-input {
     .timeline-text { max-width: 700px; }
 }
 
-.direct-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-    background: var(--bg-gradient-jet);
-    color: var(--orange-yellow-crayola);
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: var(--shadow2);
-    transition: var(--transition1);
+
+
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-    .direct-btn:hover, .direct-btn:focus { background: var(--bg-gradient-yellow1); }
+.direct-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-gradient-jet); /* fondo oscuro elegante */
+  color: var(--orange-yellow-crayola); /* acento */
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: var(--shadow2);
+  transition: background 0.3s, color 0.3s;
+}
 
-        .direct-btn:hover::before, .direct-btn:focus::before { background: var(--bg-gradient-yellow2); }
-
-::scroll-marker-group {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
+.direct-btn:hover,
+.direct-btn:focus {
+  background: var(--bg-gradient-yellow1);
+  color: var(--jet); /* texto oscuro cuando el fondo se ilumina */
 }
