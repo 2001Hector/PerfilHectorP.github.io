@@ -975,7 +975,7 @@ article { display: none; }
         filter: grayscale(1) invert(1);
     }
 
-.contact-form { margin-bottom: 10px; }
+
 
 .form-title { margin-bottom: 20px; }
 
@@ -1466,6 +1466,22 @@ textarea.form-input {
 
 
 
+.contact-form {
+  background-color: #1e1e1e; /* fondo oscuro consistente */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+}
+
+.contact-form .form-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
 .contact-buttons {
   display: flex;
   gap: 20px;
@@ -1477,18 +1493,22 @@ textarea.form-input {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--bg-gradient-jet); /* fondo oscuro elegante */
-  color: var(--orange-yellow-crayola); /* acento */
+  background: #2a2a2a;        /* gris oscuro */
+  color: #c0c0c0;             /* gris claro como los íconos */
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: var(--shadow2);
+  box-shadow: none;
   transition: background 0.3s, color 0.3s;
 }
 
 .direct-btn:hover,
 .direct-btn:focus {
-  background: var(--bg-gradient-yellow1);
-  color: var(--jet); /* texto oscuro cuando el fondo se ilumina */
+  background: #3c3c3c;
+  color: #ffffff;
+}
+
+.direct-btn ion-icon {
+  font-size: 20px;
 }
