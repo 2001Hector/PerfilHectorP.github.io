@@ -1,314 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- partial:index.partial.html -->
-    <!DOCTYPE html>
-    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" type="image/x-icon">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perfil profesional</title>
-        <link rel="stylesheet" href="style.css">
-         <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" type="image/x-icon">
-    </head>
+<body>
+    <main>
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="https://i.postimg.cc/JzBWVhW4/my-avatar.png" alt="avatar" width="80">
+                </figure>
 
-    <body>
-        <main>
-            <aside class="sidebar " data-sidebar>
-                <div class="sidebar-info">
-                    <figure class="avatar-box">
-                        <img src="https://i.postimg.cc/JzBWVhW4/my-avatar.png" alt="avatar" width="80">
-                    </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Hector Jose Chamorro Nuñez">Hector Nuñez</h1>
+                    <p class="title">Ingenerio de sistemas</p>
+                </div>
 
-                    <div class="info-content">
-                        <h1 class="name" title="Hector Jose Chamorro Nuñez">Hector Nuñez</h1>
-                        <p class="title">Ingenerio de sistemas</p>
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:nunezhector153@gmail.com" class="contact-link">nunezhector153@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Telefono</p>
+                            <a href="tel:+12133522795" class="contact-link">3208320246</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Edad </p>
+                            <time datetime="1982-06-23">24 años</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Localizacion</p>
+                            <address>Colombia,La guajira,Maicao </address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/share/19HuNsg6NQ/?mibextid=wwXIfr" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/2001Hector" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/hectorjc53?igsh=M2JyNG9idWxleGFn&utm_source=qr" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>Acerca</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resumen</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portafolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contacto</button></li>
+                </ul>
+            </nav>
+
+            <!-- Página Acerca -->
+            <article class="about active" data-page="acerca">
+                <header>
+                    <h2 class="h2 article-title">Acerca</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>Soy un profesional en Ingeniería de Sistemas con experiencia en el análisis, diseño y desarrollo de soluciones tecnológicas. Manejo de forma sólida múltiples lenguajes de programación y herramientas de desarrollo, aplicando buenas prácticas para crear sistemas eficientes, escalables y orientados a las necesidades del usuario. Me caracterizo por una alta capacidad de aprendizaje, adaptabilidad y enfoque en la resolución de problemas, contribuyendo al logro de objetivos tecnológicos en diversos entornos.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">Lo que estoy haciendo</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Pagina web</h4>
+                                <p class="service-item-text">Personalizados</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Desarrollo web</h4>
+                                <p class="service-item-text">Personalizados</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+                                <p class="service-item-text">Personalizados</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Diseño grafico</h4>
+                                <p class="service-item-text">Personalizados</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="clients">
+                    <h3 class="h3 clients-title">Conocimientos</h3>
+
+                    <ul class="clients-list has-scrollbar">
+                        <!-- React Native -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Native"></a>
+                        </li>
+
+                        <!-- Java -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java"></a>
+                        </li>
+
+                        <!-- JavaScript -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript"></a>
+                        </li>
+
+                        <!-- PHP -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP"></a>
+                        </li>
+
+                        <!-- CSS -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS"></a>
+                        </li>
+
+                        <!-- SQL -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL"></a>
+                        </li>
+
+                        <!-- TypeScript -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript"></a>
+                        </li>
+
+                        <!-- Node.js -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js"></a>
+                        </li>
+
+                        <!-- HTML5 -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5"></a>
+                        </li>
+
+                        <!-- TailwindCSS -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></a>
+                        </li>
+
+                        <!-- MongoDB -->
+                        <li class="clients-item">
+                            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB"></a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Página Resumen -->
+            <article class="resumen" data-page="resumen">
+                <header>
+                    <h2 class="h2 article-title">Resumen</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                        <h3 class="h3">Educacion</h3>
                     </div>
 
-                    <button class="info-more-btn" data-sidebar-btn>
-                        <span>Show Contacts</span>
-                        <ion-icon name="chevron-down"></ion-icon>
-                    </button>
-                </div>
-
-                <div class="sidebar-info-more">
-                    <div class="separator"></div>
-
-                    <ul class="contacts-list">
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                                <p class="contact-title">Email</p>
-
-                                <a href="mailto:nunezhector153@gmail.com"
-                                    class="contact-link">nunezhector153@gmail.com</a>
-                            </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Universidad de La Guajira</h4>
+                            <span>2021 - 2025</span>
+                            <p class="timeline-text">Graduado como Ingeniero de Sistemas. Adquirí conocimientos técnicos en desarrollo web, bases de datos y fundamentos de ciberseguridad.</p>
                         </li>
 
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="phone-portrait-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                                <p class="contact-title">Telefono</p>
-
-                                <a href="tel:+12133522795" class="contact-link">3208320246</a>
-                            </div>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Primaria y secundaria</h4>
+                            <span>2011 - 2020</span>
+                            <p class="timeline-text">Educación básica y media completada, con bases en matemáticas, lenguaje, ciencias y tecnología.</p>
                         </li>
 
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="calendar-outline"></ion-icon>
-                            </div>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">N/A</h4>
+                            <span>N/A</span>
+                            <p class="timeline-text">N/A</p>
+                        </li>
+                    </ol>
+                </section>
 
-                            <div class="contact-info">
-                                <p class="contact-title">Edad </p>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                        <h3 class="h3">Expererienzas</h3>
+                    </div>
 
-                                <time datetime="1982-06-23">24 años</time>
-                            </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Creación de bases de datos</h4>
+                            <span>2023 - Presente</span>
+                            <p class="timeline-text">Diseño y gestión de bases de datos relacionales utilizando herramientas como MySQL y PHPMyAdmin.</p>
                         </li>
 
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                                <p class="contact-title">Localizacion</p>
-
-                                <address>Colombia,La guajira,Maicao </address>
-                            </div>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Desarrollo de páginas web</h4>
+                            <span>2020 - 2023</span>
+                            <p class="timeline-text">Desarrollo de sitios web dinámicos con HTML, CSS, JavaScript y PHP. Enfoque en diseño responsivo y experiencia de usuario.</p>
                         </li>
-                    </ul>
 
-                    <div class="separator"></div>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Formación en desarrollo web</h4>
+                            <span>2013 - 2015</span>
+                            <p class="timeline-text">Aprendizaje autodidacta de fundamentos de desarrollo web y diseño de interfaces.</p>
+                        </li>
+                    </ol>
+                </section>
 
-                    <ul class="social-list">
-                        <li class="social-item"><a href="https://www.facebook.com/share/19HuNsg6NQ/?mibextid=wwXIfr"
-                                class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                         <a href="https://github.com/2001Hector" class="social-link">
-        <ion-icon name="logo-github"></ion-icon>
-    </a>
-                        <li class="social-item"><a
-                                href="https://www.instagram.com/hectorjc53?igsh=M2JyNG9idWxleGFn&utm_source=qr"
-                                class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <div class="main-content">
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li class="navbar-item"><button class="navbar-link active" data-nav-link>Acerca</button></li>
-                        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resumen</button></li>
-                        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portafolio</button></li>
-                        <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-                        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contacto</button></li>
-                    </ul>
-                </nav>
-
-                <article class="about active" data-page="acerca">
-                    <header>
-                        <h2 class="h2 article-title">Acerca</h2>
-                    </header>
-
-                    <section class="about-text">
-
-                        <p>Soy un profesional en Ingeniería de Sistemas con experiencia en el análisis, diseño y desarrollo de soluciones tecnológicas. Manejo de forma sólida múltiples lenguajes de programación y herramientas de desarrollo, aplicando buenas prácticas para crear sistemas eficientes, escalables y orientados a las necesidades del usuario. Me caracterizo por una alta capacidad de aprendizaje, adaptabilidad y enfoque en la resolución de problemas, contribuyendo al logro de objetivos tecnológicos en diversos entornos.</p>
-                    </section>
-
-                    <section class="service">
-                        <h3 class="h3 service-title">Lo que estoy haciendo</h3>
-
-                        <ul class="service-list">
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">Pagina web</h4>
-                                    <p class="service-item-text">Personalizados</p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">Desarrollo web</h4>
-                                    <p class="service-item-text">Personalizados</p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">Mobile apps</h4>
-                                    <p class="service-item-text">Personalizados</p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">Diseño grafico</h4>
-                                    <p class="service-item-text">Personalizados</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
-                
-
-                  <section class="clients">
-    <h3 class="h3 clients-title">Conocimientos</h3>
-
-    <ul class="clients-list has-scrollbar">
-
-        <!-- React Native -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Native"></a>
-        </li>
-
-        <!-- Java -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java"></a>
-        </li>
-
-        <!-- JavaScript -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript"></a>
-        </li>
-
-        <!-- PHP -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP"></a>
-        </li>
-
-        <!-- CSS -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS"></a>
-        </li>
-
-        <!-- SQL -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL"></a>
-        </li>
-
-        <!-- TypeScript -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript"></a>
-        </li>
-
-        <!-- Node.js -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js"></a>
-        </li>
-
-        <!-- HTML5 -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5"></a>
-        </li>
-
-        <!-- TailwindCSS -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></a>
-        </li>
-
-        <!-- MongoDB -->
-        <li class="clients-item">
-            <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB"></a>
-        </li>
-
-    </ul>
-</section>
-
-
-
-                </article>
-
-                <article class="resumen " data-page="resumen">
-                    <header>
-                        <h2 class="h2 article-title">Resumen</h2>
-                    </header>
-
-                    <section class="timeline">
-                        <div class="title-wrapper">
-                            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-
-                            <h3 class="h3">Educacion</h3>
-                        </div>
-
-                        <ol class="timeline-list">
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">Universidad de La Guajira</h4>
-                                <span>2021 - 2025</span>
-                                <p class="timeline-text">Graduado como Ingeniero de Sistemas. Adquirí conocimientos
-                                    técnicos en desarrollo web, bases de datos y fundamentos de ciberseguridad.</p>
-                            </li>
-
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">Primaria y secundaria</h4>
-                                <span>2011 - 2020</span>
-                                <p class="timeline-text">Educación básica y media completada, con bases en matemáticas,
-                                    lenguaje, ciencias y tecnología.</p>
-                            </li>
-
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">N/A</h4>
-                                <span>N/A</span>
-                                <p class="timeline-text">N/A</p>
-                            </li>
-                        </ol>
-                    </section>
-
-                    <section class="timeline">
-                        <div class="title-wrapper">
-                            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-
-                            <h3 class="h3">Expererienzas</h3>
-                        </div>
-
-                        <ol class="timeline-list">
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">Creación de bases de datos</h4>
-                                <span>2023 - Presente</span>
-                                <p class="timeline-text">Diseño y gestión de bases de datos relacionales utilizando
-                                    herramientas como MySQL y PHPMyAdmin.</p>
-                            </li>
-
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">Desarrollo de páginas web</h4>
-                                <span>2020 - 2023</span>
-                                <p class="timeline-text">Desarrollo de sitios web dinámicos con HTML, CSS, JavaScript y
-                                    PHP. Enfoque en diseño responsivo y experiencia de usuario.</p>
-                            </li>
-
-                            <li class="timeline-item">
-                                <h4 class="h4 timeline-item-title">Formación en desarrollo web</h4>
-                                <span>2013 - 2015</span>
-                                <p class="timeline-text">Aprendizaje autodidacta de fundamentos de desarrollo web y
-                                    diseño de interfaces.</p>
-                            </li>
-                        </ol>
-                    </section>
-
-
-                    <section class="skill">
-                        <h3 class="h3 skills-title">Mis habilidades </h3>
-
+                <section class="skill">
+                    <h3 class="h3 skills-title">Mis habilidades </h3>
+                    <ul>
                         <li class="skills-item">
                             <div class="title-wrapper">
                                 <h5 class="h5">bases de datos</h5>
@@ -320,22 +306,20 @@
                             </div>
                         </li>
 
-
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Desarrollo web front-end y back-end: PHP, HTML, CSS, JavaScript. </h5>
+                                <h5 class="h5">Desarrollo web front-end y back-end: PHP, HTML, CSS, JavaScript.</h5>
                                 <data value="70">70%</data>
                             </div>
 
                             <div class="skills-progress-bg">
                                 <div class="skills-progress-fill" style="width: 70%;"></div>
                             </div>
-
+                        </li>
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Competencia en Microsoft Office (Word, Excel, PowerPoint, entre otros).
-                                </h5>
+                                <h5 class="h5">Competencia en Microsoft Office (Word, Excel, PowerPoint, entre otros).</h5>
                                 <data value="100">100%</data>
                             </div>
 
@@ -343,124 +327,108 @@
                                 <div class="skills-progress-fill" style="width: 100%;"></div>
                             </div>
                         </li>
-                        </ul>
-                    </section>
-                </article>
-                <!-- HASTA ACA TERMINA EL CONTENIDO DE RESUMEN -->
+                    </ul>
+                </section>
+            </article>
 
+            <!-- Página Portafolio -->
+            <article class="portafolio" data-page="portafolio">
+                <header>
+                    <h2 class="h2 article-title">Portafolio</h2>
+                </header>
 
-                <!-- HASTA ACA SE COMIENA EL CONTENIDO DE PORTAFOLIO -->
-                <article class="portafolio " data-page="portafolio">
-                    <header>
-                        <h2 class="h2 article-title">Portafolio</h2>
-                    </header>
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web</button></li>
+                        <li class="filter-item"><button data-filter-btn>App</button></li>
+                        <li class="filter-item"><button data-filter-btn>Educativo</button></li>
+                    </ul>
 
-                    <section class="projects">
-                        <ul class="filter-list">
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
                             <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
                             <li class="filter-item"><button data-filter-btn>Web</button></li>
                             <li class="filter-item"><button data-filter-btn>App</button></li>
                             <li class="filter-item"><button data-filter-btn>Educativo</button></li>
                         </ul>
-
-                        <div class="filter-select-box">
-                            <button class="filter-select " data-select>
-                                <div class="select-value" data-select-value>Select Category</div>
-
-                                <div class="select-icon">
-                                    <ion-icon name="chevron-down"></ion-icon>
-                                </div>
-                            </button>
-
-                            <ul class="select-list">
-                                <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                                <li class="filter-item"><button data-filter-btn>Web</button></li>
-                                <li class="filter-item"><button data-filter-btn>App</button></li>
-                                <li class="filter-item"><button data-filter-btn>Educativo</button></li>
-                            </ul>
-                        </div>
-<!-- aqui va el contenido del portafolio -->
+                    </div>
+                    <!-- aquí va el contenido del portafolio -->
+                </section>
             </article>
-                        <!-- HASTA ACA SE COMIENA EL CONTENIDO DE PORTAFOLIO -->
 
-                        <!-- HASTA ACA COMIENZA EL CONTENIDO DE BLOG -->
+            <!-- Página Blog -->
+            <article class="blog" data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
 
-                        <article class="blog " data-page="blog">
-                            <header>
-                                <h2 class="h2 article-title">Blog</h2>
-                            </header>
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/RZ47RfKg/image.png" alt="Design conferences in 2024" loading="lazy">
+                                </figure>
 
-                            <section class="blog-posts">
-                                <ul class="blog-posts-list">
-                                    <li class="blog-post-item">
-                                        <a href="#">
-                                            <figure class="blog-banner-box">
-                                                <img src="https://i.postimg.cc/RZ47RfKg/image.png"
-                                                    alt="Design conferences in 2024" loading="lazy">
-                                            </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">fecha</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-02-23">Feb 23, 2025</time>
+                                    </div>
 
-                                            <div class="blog-content">
-                                                <div class="blog-meta">
-                                                    <p class="blog-category">fecha</p>
-                                                    <span class="dot"></span>
-                                                    <time datetime="2024-02-23">Feb 23, 2025</time>
-                                                </div>
+                                    <h3 class="h3 blog-item-title">Título del Blog</h3>
+                                    <p class="blog-text">Contenido del blog aquí.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
 
-                                                <h3 class="h3 blog-item-title"></h3>
-                                                <p class="blog-text">.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    </article>
-                                    <!-- HASTA ACA SE TERMINA EL CONTENIDO DE BLOG -->
+            <!-- Página Contacto -->
+            <article class="contacto" data-page="contacto">
+                <header>
+                    <h2 class="h2 article-title">Ubicacion </h2>
+                </header>
 
-                                    <!-- HASTA ACA COMIENZA EL CONTENIDO DE CONTACTO -->
-                                    <article class="contacto " data-page="contacto">
-                                        <header>
-                                            <h2 class="h2 article-title">Ubicacion </h2>
-                                        </header>
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23469.735178771607!2d-72.23262360807982!3d11.369207297888028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1750532725585!5m2!1ses!2sco" width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
 
-                                        <section class="mapbox" data-mapbox>
-                                            <figure>
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23469.735178771607!2d-72.23262360807982!3d11.369207297888028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1750532725585!5m2!1ses!2sco"
-                         width=" 400" height="300" loading="lazy"></iframe>
-                                            </figure>
-                                        </section>
+                <section class="contact-form">
+                    <h3 class="h3 form-title">¿Deseas hablar conmigo? Aquí están mis medios de contacto:</h3>
 
-                                        <section class="contact-form">
-                                            <h3 class="h3 form-title">¿Deseas hablar conmigo? Aquí están mis medios de
-                                                contacto:</h3>
+                    <div class="contact-buttons">
+                        <!-- Botón de Email -->
+                        <a href="mailto:nunezhector153@gmail.com" class="direct-btn">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                        <br>
+                        <!-- Botón de WhatsApp -->
+                        <a href="https://wa.me/573208320246?text=Hola, vi tu perfil y quisiera contactarme" class="direct-btn whatsapp">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
 
-                                            <div class="contact-buttons">
-                                                <!-- Botón de Email -->
-                                                <a href="mailto:nunezhector153@gmail.com" class="direct-btn">
-                                                    <ion-icon name="mail-outline"></ion-icon>
-                                                </a>
-                                                <br>
-                                                <!-- Botón de WhatsApp -->
-                                                <a href="https://wa.me/573208320246?text=Hola, vi tu perfil y quisiera contactarme"
-                                                    class="direct-btn whatsapp">
-                                                    <ion-icon name="logo-whatsapp"></ion-icon>
-                                                </a>
-                                            </div>
-                                        </section>
+    <script src="script.js"></script>
 
-                            </section>
-                        </article>
-            </div>
-        </main>
-
-        <script src="main.js"></script>
-
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
-
-    </html>
-    <!-- partial -->
-    <script src="./script.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
