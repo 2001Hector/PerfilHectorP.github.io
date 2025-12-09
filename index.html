@@ -464,36 +464,158 @@
 </article>
 
 
-            <!-- Página Portafolio -->
-            <article class="portafolio" data-page="portafolio">
-                <header>
-                    <h2 class="h2 article-title">Portafolio</h2>
-                </header>
+           <!-- Página Portafolio -->
+<article class="portafolio" data-page="portafolio">
+    <header>
+        <h2 class="h2 article-title">Portafolio</h2>
+    </header>
 
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                        <li class="filter-item"><button data-filter-btn>Web</button></li>
-                        <li class="filter-item"><button data-filter-btn>App</button></li>
-                    </ul>
+    <section class="projects">
+        <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web</button></li>
+            <li class="filter-item"><button data-filter-btn>App</button></li>
+        </ul>
 
-                    <div class="filter-select-box">
-                        <button class="filter-select" data-select>
-                            <div class="select-value" data-select-value>Seleciona la categoria</div>
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
-                            </div>
-                        </button>
+        <div class="filter-select-box">
+            <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>Selecciona la categoría</div>
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+            </button>
 
-                        <ul class="select-list">
-                            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                            <li class="filter-item"><button data-filter-btn>Web</button></li>
-                            <li class="filter-item"><button data-filter-btn>App</button></li>
-                        </ul>
-                    </div>
-                    <!-- aquí va el contenido del portafolio osea debes agregar las imagenes de las que tenga de las cosas  -->
-                </section>
-            </article>
+            <ul class="select-list">
+                <li class="select-item"><button class="active" data-filter-btn>All</button></li>
+                <li class="select-item"><button data-filter-btn>Web</button></li>
+                <li class="select-item"><button data-filter-btn>App</button></li>
+            </ul>
+        </div>
+
+        <div class="project-list">
+            <!-- Proyectos de tipo Web -->
+            <div class="project-item active" data-filter-item data-category="web">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/web1.jpg" alt="Proyecto Web 1" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sitio Web 1</h3>
+                    <p class="project-category">Web</p>
+                </a>
+            </div>
+
+            <div class="project-item active" data-filter-item data-category="web">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/web2.jpg" alt="Proyecto Web 2" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sitio Web 2</h3>
+                    <p class="project-category">Web</p>
+                </a>
+            </div>
+
+            <div class="project-item active" data-filter-item data-category="web">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/web3.jpg" alt="Proyecto Web 3" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sitio Web 3</h3>
+                    <p class="project-category">Web</p>
+                </a>
+            </div>
+
+            <!-- Proyectos de tipo App -->
+            <div class="project-item active" data-filter-item data-category="app">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/app1.jpg" alt="Aplicación Móvil 1" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Aplicación Móvil 1</h3>
+                    <p class="project-category">App</p>
+                </a>
+            </div>
+
+            <div class="project-item active" data-filter-item data-category="app">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/app2.jpg" alt="Aplicación Móvil 2" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Aplicación Móvil 2</h3>
+                    <p class="project-category">App</p>
+                </a>
+            </div>
+
+            <div class="project-item active" data-filter-item data-category="app">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/app3.jpg" alt="Aplicación Móvil 3" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Aplicación Móvil 3</h3>
+                    <p class="project-category">App</p>
+                </a>
+            </div>
+
+            <!-- Más proyectos Web -->
+            <div class="project-item active" data-filter-item data-category="web">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/web4.jpg" alt="Proyecto Web 4" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sitio Web 4</h3>
+                    <p class="project-category">Web</p>
+                </a>
+            </div>
+
+            <div class="project-item active" data-filter-item data-category="web">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/web5.jpg" alt="Proyecto Web 5" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sitio Web 5</h3>
+                    <p class="project-category">Web</p>
+                </a>
+            </div>
+
+            <!-- Más proyectos App -->
+            <div class="project-item active" data-filter-item data-category="app">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="fotos/neoclo/app4.jpg" alt="Aplicación Móvil 4" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Aplicación Móvil 4</h3>
+                    <p class="project-category">App</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</article>
 
             <!-- Página Blog -->
             <article class="blog" data-page="blog">
