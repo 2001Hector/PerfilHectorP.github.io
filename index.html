@@ -492,58 +492,92 @@
 
         <!-- Contenido del portafolio -->
         <div class="project-list">
-            <!-- Proyectos WEB - Cambia las rutas de las imágenes según tus archivos -->
+            <!-- Proyectos WEB - Agrega data-project-link para que sean clickeables -->
             <div class="project-item active" data-filter-item data-category="web">
-                <div class="project-img">
-                    <img src="fotos/neoclo/imagenN.jpeg" alt="Proyecto Web 1" loading="lazy">
-                </div>
+                <a href="javascript:void(0)" class="project-link" onclick="openProjectModal('fotos/neoclo/imagenN.jpeg', 'Sistema E-commerce', 'Web', 'Desarrollo de tienda online con carrito de compras y pasarela de pagos.')">
+                    <div class="project-img">
+                        <img src="fotos/neoclo/imagenN.jpeg" alt="Proyecto Web 1" loading="lazy">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="expand-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-content">
-                    <h3 class="project-title">Nombre Proyecto Web 1</h3>
-                    <p class="project-category">Web</p>
-                    <p class="project-desc">Breve descripción del proyecto web.</p>
+                    <h3 class="project-title" style="color: var(--white1);">Sistema E-commerce</h3>
+                    <p class="project-category" style="color: var(--orange-yellow-crayola); font-weight: var(--fw500);">Web</p>
+                    <p class="project-desc" style="color: var(--light-gray);">Desarrollo de tienda online con carrito de compras y pasarela de pagos.</p>
                 </div>
             </div>
 
             <div class="project-item active" data-filter-item data-category="web">
-                <div class="project-img">
-                    <img src="fotos/neoclo/web2.jpg" alt="Proyecto Web 2" loading="lazy">
-                </div>
+                <a href="javascript:void(0)" class="project-link" onclick="openProjectModal('fotos/neoclo/web2.jpg', 'Blog Tecnológico', 'Web', 'Blog responsive con sistema de administración de contenido.')">
+                    <div class="project-img">
+                        <img src="fotos/neoclo/web2.jpg" alt="Proyecto Web 2" loading="lazy">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="expand-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-content">
-                    <h3 class="project-title">Nombre Proyecto Web 2</h3>
-                    <p class="project-category">Web</p>
-                    <p class="project-desc">Breve descripción del proyecto web.</p>
+                    <h3 class="project-title" style="color: var(--white1);">Blog Tecnológico</h3>
+                    <p class="project-category" style="color: var(--orange-yellow-crayola); font-weight: var(--fw500);">Web</p>
+                    <p class="project-desc" style="color: var(--light-gray);">Blog responsive con sistema de administración de contenido.</p>
                 </div>
             </div>
 
-            <!-- Agrega más proyectos web aquí -->
-
-            <!-- Proyectos APP - Cambia las rutas de las imágenes según tus archivos -->
+            <!-- Proyectos APP -->
             <div class="project-item active" data-filter-item data-category="app">
-                <div class="project-img">
-                    <img src="fotos/neoclo/app1.jpg" alt="Proyecto App 1" loading="lazy">
-                </div>
+                <a href="javascript:void(0)" class="project-link" onclick="openProjectModal('fotos/neoclo/app1.jpg', 'App de Tareas', 'App', 'Aplicación móvil para gestión de tareas diarias.')">
+                    <div class="project-img">
+                        <img src="fotos/neoclo/app1.jpg" alt="Proyecto App 1" loading="lazy">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="expand-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-content">
-                    <h3 class="project-title">Nombre Proyecto App 1</h3>
-                    <p class="project-category">App</p>
-                    <p class="project-desc">Breve descripción de la aplicación.</p>
+                    <h3 class="project-title" style="color: var(--white1);">App de Tareas</h3>
+                    <p class="project-category" style="color: var(--orange-yellow-crayola); font-weight: var(--fw500);">App</p>
+                    <p class="project-desc" style="color: var(--light-gray);">Aplicación móvil para gestión de tareas diarias.</p>
                 </div>
             </div>
 
             <div class="project-item active" data-filter-item data-category="app">
-                <div class="project-img">
-                    <img src="fotos/neoclo/app2.jpg" alt="Proyecto App 2" loading="lazy">
-                </div>
+                <a href="javascript:void(0)" class="project-link" onclick="openProjectModal('fotos/neoclo/app2.jpg', 'Fitness Tracker', 'App', 'Seguimiento de ejercicios y progreso físico.')">
+                    <div class="project-img">
+                        <img src="fotos/neoclo/app2.jpg" alt="Proyecto App 2" loading="lazy">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="expand-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-content">
-                    <h3 class="project-title">Nombre Proyecto App 2</h3>
-                    <p class="project-category">App</p>
-                    <p class="project-desc">Breve descripción de la aplicación.</p>
+                    <h3 class="project-title" style="color: var(--white1);">Fitness Tracker</h3>
+                    <p class="project-category" style="color: var(--orange-yellow-crayola); font-weight: var(--fw500);">App</p>
+                    <p class="project-desc" style="color: var(--light-gray);">Seguimiento de ejercicios y progreso físico.</p>
                 </div>
             </div>
-
-            <!-- Agrega más proyectos app aquí -->
         </div>
     </section>
 </article>
+
+<!-- Modal para ver imagen en grande (agrégalo antes del cierre del body) -->
+<div class="modal-container" id="projectModal">
+    <div class="overlay" onclick="closeProjectModal()"></div>
+    <div class="testimonials-modal project-modal">
+        <button class="modal-close-btn" onclick="closeProjectModal()">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="modal-img-wrapper">
+            <img src="" alt="" id="modalProjectImage" class="modal-img">
+        </div>
+        <div class="modal-content">
+            <h3 class="modal-title" id="modalProjectTitle"></h3>
+            <p class="modal-category" id="modalProjectCategory"></p>
+            <p class="modal-desc" id="modalProjectDesc"></p>
+        </div>
+    </div>
+</div>
 
             <!-- Página Blog -->
             <article class="blog" data-page="blog">

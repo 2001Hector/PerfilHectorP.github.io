@@ -112,3 +112,38 @@ for(let i = 0; i < navigationLinks.length; i++) {
         window.scrollTo(0, 0);
     });
 }
+// Funciones para el modal de proyectos (agrega esto al final de tu script.js)
+function openProjectModal(imageSrc, title, category, description) {
+    const modal = document.getElementById('projectModal');
+    const modalImage = document.getElementById('modalProjectImage');
+    const modalTitle = document.getElementById('modalProjectTitle');
+    const modalCategory = document.getElementById('modalProjectCategory');
+    const modalDesc = document.getElementById('modalProjectDesc');
+    
+    // Cargar datos en el modal
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalCategory.textContent = category;
+    modalDesc.textContent = description;
+    
+    // Mostrar modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevenir scroll
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restaurar scroll
+}
+
+// Cerrar modal con Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeProjectModal();
+    }
+});
+
+// Cerrar modal al hacer clic fuera
+document.querySelector('.modal-container .overlay').addEventListener('click', closeProjectModal);
